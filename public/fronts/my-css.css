@@ -1,0 +1,117 @@
+body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[type="email"], textarea, select, input[type="button"], input[type="submit"], button, #tiptip_content, .map-box p, .map-box div, .numerical-rating .rating-counter, body .menu-responsive i.menu-trigger:after
+{
+    font-family: "Arial","Times New Roman",sans-serif !important;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.list-chapters p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-chapters p:hover {
+    overflow: visible;
+    white-space: pre-line;
+}
+
+/* CUSTOM listing-item */
+
+.listing-item-content h3, .listing-item-content span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.listing-item-content h3:hover, .listing-item-content span:hover { 
+    overflow: visible;
+    white-space: pre-line;
+}
+
+.listing-item-content {
+    padding-right: 32px;
+}
+
+/* test */
+.listing-item {
+    height: 350px;
+}
+
+.listing-item-content{
+    padding: 0 20px;
+}
+
+span.like-icon {
+    top: 12px;
+    right: inherit;
+    margin: 0 20px;
+}
+
+.listing-item-container.list-layout .listing-item-image {
+    flex: 1;
+}
+/* end test */
+
+/* END CUSTOM listing-item */
+
+
+/* CSS COMMENT */
+
+/* Replies */
+.show-more-replies-button:before { content: attr(data-more-title); }
+.show-more-replies-button.active:before { content: attr(data-less-title); }
+
+.show-more-replies-button {
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    padding: 5px 20px;
+    color: #666;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    top: -10px;
+    min-width: 140px;
+    margin-top: 15px;
+    
+}
+
+.show-more-replies {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: margin 0.4s;
+}
+
+.show-more-replies:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: block;
+    background: linear-gradient(rgba(255,255,255,0), #fff 88%);
+    z-index: 9;
+    opacity:0.5;
+    visibility: visible;
+    transition: 0.8s;
+}
+
+.show-more-replies.visible {
+    margin-bottom: 20px;
+}
+
+
+/* END CSS COMMENT */
