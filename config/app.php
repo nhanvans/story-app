@@ -237,7 +237,7 @@ return [
     ],
 
 
-    'data_folder' => '../data/',
+    'data_folder' => 'data/',
     
      /*pagination*/
      'nbrPages' => [

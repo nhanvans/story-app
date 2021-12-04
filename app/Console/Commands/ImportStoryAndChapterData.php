@@ -40,15 +40,15 @@ class ImportStoryAndChapterData extends Command
      */
     public function handle()
     {
-        // Excel::import(new StoryImport, config('app.data_folder'). 'stories/stories.csv');
+        Excel::import(new StoryImport, config('app.data_folder'). 'stories/stories.csv');
 
-        // $dir = config('app.data_folder') . 'stories/chapters/';
-        // foreach (scandir($dir) as $file) {
-        //     if ( $file != '.'  &&  $file != '..' && strpos($file, 'chapter_') !== false && strpos($file, 'csv') !== false)
-        //     {
-        //         Excel::import(new ChapterImport, $dir.$file);
-        //     }
-        // }
+        $dir = config('app.data_folder') . 'stories/chapters/';
+        foreach (scandir($dir) as $file) {
+            if ( $file != '.'  &&  $file != '..' && strpos($file, 'chapter_') !== false && strpos($file, 'csv') !== false)
+            {
+                Excel::import(new ChapterImport, $dir.$file);
+            }
+        }
         return Command::SUCCESS;
     }
 }

@@ -55,7 +55,7 @@ return [
 
         'external' => [
             'driver' => 'local',
-            'root' => '../data'
+            'root' => 'data'
         ],
 
     ],
