@@ -27,7 +27,7 @@ class StoryImport implements ToCollection, WithHeadingRow
                         'author' => $row['author'],
                         'source' => $row['source'],
                         'status' => $row['status'],
-                        'total_chapter' => !empty($row['total_chapter']) && $row['total_chapter'] != null ? $row['total_chapter'] : 0,
+                        'total_chapter' => $row['total_chapter'],
                         'description' => $row['description'],
                         'status' => 0
                     ]);
